@@ -10,17 +10,11 @@
   </head>
 
   <body style="margin: 0; overflow: hidden;">
-    <a-scene
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
-      <a-text
-        value="hey Kenia, can you read this?"
-        look-at="[gps-camera]"
-        scale="110 110 110"
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+      <a-text value="hey Kenia, can you read this?" look-at="[gps-camera]" scale="100 100 100"
         gps-entity-place="latitude: 39.999337; longitude: -75.108538;"
       ></a-text>
+      <a-entity gps-entity-place="latitude: 39.9993374; longitude: -75.1085383;" gltf-model="./models/prism/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
   </body>
