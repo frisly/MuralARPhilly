@@ -14,7 +14,7 @@
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <style>
       body {
-        height: 3000px; /* Used to enable scrolling */
+        height: 2000px; /* Used to enable scrolling */
         background: linear-gradient(180deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
       }
       html {
@@ -40,38 +40,38 @@
       </style>
   </head>
   <body class="container flex flex-col w-full lg:hidden">
-      <div class="w-5/6 h-auto pt-12 flex flex-col self-center">
-        <span class="h-1/8 text-white text-4xl font-black mb-36">
+      <div class="w-5/6  h-screen pt-12 flex flex-col self-center">
+        <span class="h-1/8 text-white text-4xl font-black mb-10">
         In a world after police & prisons, 
           what will our collective safety & sanctuary 
           look like in the future?
         </span>
-      </div>
-      <div id='student'class="w-5/6 h-screen self-center">
-        <div class="container border">
-          <div class="frame flex flex-col w-">
-            <!---3D INLINE RENDERER-->
-            <div id="result">
-              <canvas></canvas>
+        <div class="self-center">
+          <div class="container">
+            <div class="frame flex flex-col w-">
+              <!---3D INLINE RENDERER-->
+              <div id="result">
+                <canvas></canvas>
+              </div>
             </div>
-            <!---SECONDARY TEXT-->
-            <div id="editor" class='text-white text-2xl font-black mb-36 py-12 text-center'> hello testing the waters with a future beyond now.
-            </div>
-            <!---3D INLINE RENDERER-->
-            <div id="result">
-              <canvas></canvas>
-            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>    
+  
           </div>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>    
-
+          <!---SECONDARY TEXT-->
+          <div id="editor" class='text-white text-4xl font-black py-12 text-right '> 
+            <span>Enter the portal by <a class='animate-pulse' href="/future.html">clicking here.</a> 
+            </span>
+          </div>
+  
         </div>
+      </div>
+      <div id='About the class' class="border container h-screen self-center flex flex-col p-20">
+
+        <div id='Students' class="text-4xl font-black text-white text-center"><span>Class</span></div>
+        <div id='Class' class="text-xl font-black text-white text-center"><span>Students</span></div>
 
       </div>
-      <div class="flex flex-row self-center w-1/2">
-        <a class="text-center h-auto border rounded-full border-white text-white font-semi text-xl px-4" href="/future.html" >Team</a>
-        <a class="text-center h-auto border rounded-full border-white animate-pulse text-white font-semi px-4 text-xl ml-4" href="/future.html" >VR</a>
 
-      </div>
       
     
     <script src="app.js" async defer></script>
