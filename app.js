@@ -43,7 +43,6 @@ function animate(time) {
 
   resizeCanvasToDisplaySize();
 
-  mesh.rotation.x = time * 0.5;
   mesh.rotation.y = time * 1;
 
   renderer.render(scene, camera);
