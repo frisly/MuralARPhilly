@@ -2,9 +2,6 @@
 
 const  renderer = new THREE.WebGLRenderer({canvas: document.querySelector("canvas"), alpha: true});
 
-// There's no reason to set the aspect here because we're going
-// to set it every frame anyway so we'll set it to 2 since 2
-// is the the aspect for the canvas default size (300w/150h = 2)
 const  camera = new THREE.PerspectiveCamera(70, 2, 1, 1000);
 camera.position.z = 400;
 
