@@ -11,11 +11,23 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
     </head>
-    <body>
-        <a-scene>
+    <body style="background-color: #272E4A;" class="h-screen w-full flex justify-center relative">
+
+        <!-- Open event-->
+
+
+          <button id="eventStart" class="h-12 bg-red-200 self-center absolute z-40" onclick="start()">ENTER</button>
+
+
+
+        <a-scene id="vrScene" class="filter blur-md">
+
 
           <a-box position="-1 0.5 -3" rotation="0 45 0" color="#E3286F"></a-box>
           <a-sphere position="0 1.25 -5" radius="1.25" color="#E3286F"></a-sphere>
@@ -38,6 +50,12 @@
             }
           });
           sound.play();
+
+
+          function start(){
+            document.getElementById("vrScene").className='',
+            document.getElementById("eventStart").className='hidden'
+          };
         </script>
 
 
