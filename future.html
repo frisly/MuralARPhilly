@@ -11,15 +11,29 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     </head>
     <body>
         <a-scene>
+
           <a-box position="-1 0.5 -3" rotation="0 45 0" color="#E3286F"></a-box>
           <a-sphere position="0 1.25 -5" radius="1.25" color="#E3286F"></a-sphere>
           <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#E3286F"></a-cylinder>
           <a-plane position="0 0 -4" rotation="-90 0 0" width="400" height="400" color="#272E4A"></a-plane>
           <a-sky color="#272E4A"></a-sky>
+        
+            
         </a-scene>
+
+        <script>
+          var sound = new Howl({
+            src: ['/assets/Beginning.m4a']});
+          sound.play();
+        </script>
+
+
+        
+        
     </body>
 </html>

@@ -47,3 +47,131 @@ function animate(time) {
 }
 
 requestAnimationFrame(animate);
+
+
+
+/// Students JS ///
+
+
+function Samiaha() {
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = SamiahaCopy;
+
+}
+
+function Jonae(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+  document.getElementById("studentText").innerText = JonaeCopy;
+
+}
+
+function Quaron(){
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = QuaronCopy;
+
+}
+
+function Damien(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+  document.getElementById("studentText").innerText = DamienCopy;
+
+}
+
+function Ani(){
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = AniCopy;
+
+}
+
+function Cameron(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+
+  document.getElementById("studentText").innerText = CameronCopy;
+
+}
+
+function Jahsiah(){
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = JahsiahCopy;
+
+}
+
+function Amirah(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+  document.getElementById("studentText").innerText = AmirahCopy;
+
+}
+
+function Mya(){
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = MyaCopy;
+
+}
+
+function Oscar(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+  document.getElementById("studentText").innerText = OscarCopy;
+
+}
+
+function Kesiah(){
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = KesiahCopy;
+
+}
+
+function Sylvania(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+  document.getElementById("studentText").innerText = SylvaniaCopy;
+
+}
+
+function Adlin(){
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = AdlinCopy;
+
+}
+
+function Salai(){
+
+  document.getElementById("image").src="/assets/mural.jpg";
+  document.getElementById("studentText").innerText = SalaiCopy;
+
+}
+
+function Jessie(){
+
+  document.getElementById("image").src="http://31.media.tumblr.com/fca646cd8fe87906e605ad7e8d039903/tumblr_mmoz4fWT6U1soh1p8o1_500.png";
+  document.getElementById("studentText").innerText = JessieCopy;
+
+}
+
+
+
+let SamiahaCopy = ''
+let JonaeCopy = ''
+let QuaronCopy = ''
+let DamienCopy = 'Check this out.'
+let AniCopy = ''
+let CameronCopy = "Hey i actually changed it"
+let JahsiahCopy = ''
+let AmirahCopy = ''
+let MyaCopy = ''
+let OscarCopy = ''
+let KesiahCopy = ''
+let SylvaniaCopy = ''
+let AdlinCopy = ''
+let SalaiCopy = ''
+let JessieCopy = ''
