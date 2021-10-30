@@ -27,12 +27,15 @@
         </a-scene>
 
         <script>
+
+
+
           var sound = new Howl({
             src: ['/assets/Beginning.m4a'],
             onplayerror: function() {
               sound.once('unlock', function() {
                 sound.play();});
-               }  
+            }
           });
           sound.play();
         </script>
