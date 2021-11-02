@@ -10,18 +10,20 @@
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
        
     </head>
-    <body class="h-screen w-full flex justify-center relative bg-yellow-200">
+    <body class="h-screen w-full flex justify-center relative bg-black">
 
 
-        <a-scene id="vrScene">
+        <a-scene id="vrScene" >
 
           <!--Asset Manager-->
           <a-assets>
             <a-asset-item id="flower" src="/models/dandelion_in_the_wind/scene.gltf"></a-asset-item>
+            <img id="skymap" src="bg/sky.jpg" crossorigin="anonymous">
           </a-assets>
 
 
@@ -34,8 +36,17 @@
           </a-entity>
           
           <!--world-->
+          <a-light type="point" light="color: #fff; intensity:0.18" position="-3 -10 0"></a-light>
+          <a-light type="point" light="type: spot; color: #fffbcf; intensity: 0.77; angle: 6.59; decay: 3.42; penumbra: 0.58" position="0.03641 1.99222 0.48307"></a-light>
+          <a-light type="point" light="type: spot; color: #eee1fe; intensity: 0.54; angle: 29.16; decay: 3.42; penumbra: 1" position="0.06546 2.1761 0.6083" rotation="-43.65 0 0"></a-light>
+
+
+
+          <a-plane position="1 1.1 -4" rotation="-90 0 0" width="400" height="400" color="#363631" material="" geometry=""></a-plane>
           
-          <a-plane position="0 0 -4" rotation="-90 0 0" width="400" height="400" color="#272E4A"></a-plane>
+
+      <a-entity id="sky" geometry="primitive:sphere; radius:30; phiLength:360; phiStart:0; thetaLength:90" material="shader:flat; side:back; height:2048; src:#skymap; width:2048"></a-entity>
+          <a-plane position="1 1.1 -4" rotation="-90 0 0" width="400" height="400" color="#363631"></a-plane>
             
         </a-scene>
 
