@@ -6,7 +6,7 @@ const  camera = new THREE.PerspectiveCamera(70, 2, 1, 1000);
 camera.position.z = 400;
 
 const scene = new THREE.Scene();
-const geometry = new THREE.BoxGeometry(200, 200, 200);
+const geometry = new THREE.BoxGeometry(150, 150, 150);
 const material = new THREE.MeshPhongMaterial({
   color: 0xFFfffff,
   specular: 0xffffff,

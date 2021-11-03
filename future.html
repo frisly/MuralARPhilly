@@ -12,8 +12,7 @@
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
-
-       
+ 
     </head>
     <body class="h-screen w-full flex justify-center relative bg-black">
 
@@ -22,13 +21,13 @@
 
           <!--Asset Manager-->
           <a-assets>
-            <a-asset-item id="flower" src="/models/dandelion_in_the_wind/scene.gltf"></a-asset-item>
+            <a-asset-item id="flower" src="/models/dandelion_in_the_wind/scene.gltf" ></a-asset-item>
             <img id="skymap" src="bg/sky.jpg" crossorigin="anonymous">
           </a-assets>
 
 
           <!--entity-->
-          <a-entity position="0 2 -.7" rotation="0 180 0" gltf-model="#flower" scale="0.001 0.001 0.001" animation-mixer="timeScale: .5" ></a-entity>
+          <a-entity position="0 2 -.7" rotation="0 180 0" gltf-model="#flower"  scale="0.001 0.001 0.001" animation-mixer="timeScale: .5" ></a-entity>
           
           <!--camera-->
           <a-entity id="rig" position="0 0 0">
@@ -36,6 +35,7 @@
           </a-entity>
           
           <!--world-->
+
           <a-light type="point" light="color: #fff; intensity:0.18" position="-3 -10 0"></a-light>
           <a-light type="point" light="type: spot; color: #fffbcf; intensity: 0.77; angle: 6.59; decay: 3.42; penumbra: 0.58" position="0.03641 1.99222 0.48307"></a-light>
           <a-light type="point" light="type: spot; color: #eee1fe; intensity: 0.54; angle: 29.16; decay: 3.42; penumbra: 1" position="0.06546 2.1761 0.6083" rotation="-43.65 0 0"></a-light>

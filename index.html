@@ -10,10 +10,10 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/85/three.min.js"></script>
   </head>
-  <body>
+  <body style="background-color: #292D50;">
 
     <!-- NAVIGATION -->
-      <nav id="main nav" style="background-image: url(/bg/1.png);" class="h-10 border-b border-black sticky top-0 flex flex-wrap justify-center">
+      <nav id="main nav" style="background-image: url(/bg/1.png);" class="hidden h-10 border-b border-black sticky top-0 sm:flex flex-wrap justify-center">
           <div id="Pages" class="h-full w-full flex justify-evenly text-white">
             <button id="VR Experience"> <a href="">VR</a></button>
             <button id="Mural"> <a href="">MURAL</a></button>
@@ -24,41 +24,40 @@
         </nav>
 
         <!--        LANDING      -->
-            <section id="landing" style="background-image: url(/bg/1.png);" class="h-screen bg-cover bg-center">
+            <section id="landing" style="background-image: url(/bg/1.png);" class="bg-contain bg-no-repeat h-screen sm:bg-cover bg-center">
+              
               <div id="landing header" class="h-full flex">
-                <div id="years" class="h-full w-1/2 flex p-12 pb-72">
-                    <img src="/assets/years.png" class="object-none object-right" alt="the coming years will be hard">
+
+                <!--Text-->
+                <div id="years" class="hidden h-full w-1/2 sm:flex py-40">
+                    <img src="/assets/years.png" class="object-none object-right mr-24 lg:mr-40" alt="the coming years will be hard">
                 </div>
-                <div id="but" class="h-full w-1/2 flex">
-                    <img src="/assets/future.png" class="object-none object-left" alt="">
+
+                <!--VR Link-->
+                
+                    <div id="result" class="absolute self-center w-full">
+                        <a href="/future.html"><canvas class="w-full"></canvas></a>
+                    </div>
+
+              <!--Text-->
+                  <div id="but" class="hidden h-full w-1/2 sm:flex py-40">
+                    <img src="/assets/future.png" class="object-none object-left ml-24 lg:ml-40 overflow-scroll" alt="">
                   </div>
               </div>
               
 
             </section>
 
-        <!--         VR         -->   
-            <section id="vr experience" style="background-image: url(/bg/2.png);" class="h-screen bg-cover bg-center">
-                
-              
-              <div id="vr" class="w-full">
-                  <!---3D INLINE RENDERER-->
-                    <div id="result" class="self-center w-full">
-                        <a href="/future.html"><canvas class="w-full"></canvas></a>
-                    </div>
-              </div>
-
-            </section>
 
         <!-- MURAL -->
-            <section id="credits" style="background-image: url(/bg/5.png);" class="bg-cover bg-center flex">
+            <section id="credits" style="background-image: url(/bg/5.png);" class="hidden bg-cover bg-center sm:flex">
 
               <img src="/assets/mural.jpg" class="w-full object-contain p-10 lg:p-24" alt="">
 
             </section>
 
         <!-- STUDENT SECTION --> 
-            <section id="students" class="h-screen blur-sm bg-yellow-100 flex flex-col flex-nowrap">
+            <section id="students" class="hidden h-screen blur-sm bg-yellow-100 sm:flex flex-col flex-nowrap">
               
                 <nav id="main nav" class="filter h-10 border-b border-black bg-yellow-100 sticky top-0 flex flex-wrap justify-center">
                 <div id="Pages" class="h-full w-full flex justify-evenly text-black">
@@ -120,7 +119,7 @@
             </section>
 
         <!-- CREDITS -->
-            <section id="credits" style="background-image: url(/bg/4.png);" class="h-screen bg-cover">
+            <section id="credits" style="background-image: url(/bg/4.png);" class="hidden sm:block h-screen bg-cover">
 
             </section>
 
