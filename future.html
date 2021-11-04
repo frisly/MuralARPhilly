@@ -16,7 +16,7 @@
     <body>
 
 
-        <a-scene id="vrScene" >
+        <a-scene id="vrScene" cursor="rayOrigin: mouse">
 
           <!--Asset Manager-->
           <a-assets>
@@ -32,12 +32,13 @@
 
           <a-entity position="3.23068 2 -0.7" rotation="0 90 0" gltf-model="#flower" scale="0.001 0.001 0.001"></a-entity>
 
-          <a-entity position="-10.71589 4.43847 -0.7" rotation="1 1 0" gltf-model="#prism" scale="0.83 1 0.84"></a-entity>
+          <a-entity link="href: portal.html;" position="-10.71589 4.43847 -0.7" rotation="1 1 0" gltf-model="#prism" scale="0.83 1 0.84"></a-entity>
 
 
           <!--camera-->
           <a-entity id="rig" position="0 1.8 0">
             <a-entity camera look-controls wasd-controls >
+              <a-cursor id="cursor" raycaster fuse="true" fusetimeout="5000"></a-cursor>
               
             </a-entity>
           </a-entity>
