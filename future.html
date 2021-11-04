@@ -7,14 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
  
     </head>
-    <body class="h-screen w-full flex justify-center relative bg-black">
+    <body>
 
 
         <a-scene id="vrScene" >
@@ -29,8 +28,8 @@
           <!--entity-->
           <a-entity position="0 2 -.7" rotation="0 180 0" gltf-model="#flower"  scale="0.001 0.001 0.001" animation-mixer="timeScale: .5" ></a-entity>
 
-          <a-entity position="3.23068 2 -0.7" rotation="0 90 0" gltf-model="/models/dandelion_in_the_wind/scene.gltf" scale="0.001 0.001 0.001"></a-entity>
-          <a-entity position="5.23416 2 -0.7894" rotation="0 90 0" gltf-model="/models/dandelion_in_the_wind/scene.gltf" scale="0.001 0.001 0.001"></a-entity>
+          <a-entity position="3.23068 2 -0.7" rotation="0 90 0" gltf-model="#flower" scale="0.001 0.001 0.001"></a-entity>
+          <a-entity position="5.23416 2 -0.7894" rotation="0 90 0" gltf-model="#flower" scale="0.001 0.001 0.001"></a-entity>
           
           <!--camera-->
           <a-entity id="rig" position="0 1.8 0">
