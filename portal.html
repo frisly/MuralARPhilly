@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>inthefuture</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+ 
+    </head>
+    <body>
+
+
+        <a-scene id="vrScene" >
+
+          <!--Asset Manager-->
+          <a-assets>
+            <a-asset-item id="flower" src="/models/dandelion_in_the_wind/scene.gltf" ></a-asset-item>
+          </a-assets>
+
+
+          <!--entity-->
+          <a-entity position="0 0 -.7" rotation="0 180 0" gltf-model="#flower"  scale="0.001 0.001 0.001" animation-mixer="timeScale: .5" ></a-entity>
+
+          <a-entity position="3.23068 0 -0.7" rotation="0 90 0" gltf-model="/models/dandelion_in_the_wind/scene.gltf" scale="0.001 0.001 0.001"></a-entity>
+          <a-entity position="5.23416 0 -0.7894" rotation="0 90 0" gltf-model="/models/dandelion_in_the_wind/scene.gltf" scale="0.001 0.001 0.001"></a-entity>
+          
+          <!--camera-->
+          <a-entity id="rig" position="0 0 0">
+            <a-entity camera look-controls wasd-controls >
+              <a-entity cursor="fuse: true; fuseTimeout: 5000000" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: black; shader: flat"> </a-entity>
+            </a-entity>
+          </a-entity>
+
+
+
+          <!--Wolrd-->
+          <a-entity environment="preset: japan; groundColor: #445; grid: cross"></a-entity>          
+        </a-scene>
+
+        <!--Audio script-->
+          <script>
+            var sound = new Howl({
+              src: ['/assets/Beginning.m4a'],
+              onplayerror: function() {
+                sound.once('unlock', function() {
+                  sound.play();});
+              }
+            });
+            sound.play();
+          </script>
+
+
+        
+        
+    </body>
+</html>

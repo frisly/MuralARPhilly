@@ -23,17 +23,39 @@
           <a-assets>
             <a-asset-item id="flower" src="/models/dandelion_in_the_wind/scene.gltf" ></a-asset-item>
             <img id="skymap" src="bg/sky.jpg" crossorigin="anonymous">
+            <img id="homeThumbnail" src="bg/2.png">
           </a-assets>
 
 
           <!--entity-->
           <a-entity position="0 2 -.7" rotation="0 180 0" gltf-model="#flower"  scale="0.001 0.001 0.001" animation-mixer="timeScale: .5" ></a-entity>
+
+          <a-entity position="3.23068 2 -0.7" rotation="0 90 0" gltf-model="/models/dandelion_in_the_wind/scene.gltf" scale="0.001 0.001 0.001"></a-entity>
+          <a-entity position="5.23416 2 -0.7894" rotation="0 90 0" gltf-model="/models/dandelion_in_the_wind/scene.gltf" scale="0.001 0.001 0.001"></a-entity>
           
           <!--camera-->
-          <a-entity id="rig" position="0 0 0">
-            <a-entity  look-controls wasd-controls ></a-entity>
+          <a-entity id="rig" position="0 1.8 0">
+            <a-entity camera look-controls wasd-controls >
+              <a-entity cursor="fuse: true; fuseTimeout: 5000"
+            position="0 0 -1"
+            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+            material="color: black; shader: flat">
+              </a-entity>
+            </a-entity>
           </a-entity>
+
+
+          <!--Link-->
           
+
+          <a-link position="-12.90116 2.5 0.34597" geometry="primitive: circle; segments: 64; radius: 6" raycaster="" href="portal.html" title="portal" image="#homeThumbnail" material="shader: portal; pano: http://127.0.0.1:5500/bg/2.png; side: double; backgroundColor: #633d81" link="backgroundColor: #633d81" scale="0.2 0.2 0.3" rotation="0 -90 0">
+            
+            <a-entity text="color: white; align: center; font: kelsonsans; value: portal; width: 5" position="0 1.5 0" rotation="0 180 0"></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; pano: [object HTMLImageElement]; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; pano: [object HTMLImageElement]; side: back" visible="false"></a-entity></a-link>
+
+          
+
+
+
           <!--world-->
 
           <a-light type="point" light="color: #fff; intensity:0.18" position="-3 -10 0"></a-light>
@@ -45,9 +67,8 @@
           <a-plane position="1 1.1 -4" rotation="-90 0 0" width="400" height="400" color="#363631" material="" geometry=""></a-plane>
           
 
-      <a-entity id="sky" geometry="primitive:sphere; radius:30; phiLength:360; phiStart:0; thetaLength:90" material="shader:flat; side:back; height:2048; src:#skymap; width:2048"></a-entity>
-          <a-plane position="1 1.1 -4" rotation="-90 0 0" width="400" height="400" color="#363631"></a-plane>
-            
+          <a-entity id="sky" geometry="primitive:sphere; radius:30; phiLength:360; phiStart:0; thetaLength:90" material="shader:flat; side:back; height:2048; src:#skymap; width:2048"></a-entity>
+          <a-plane position="1 1.22 -4" rotation="-90 0 0" width="400" height="400" color="#363631" material="" geometry=""></a-plane>            
         </a-scene>
 
         <!--Audio script-->
