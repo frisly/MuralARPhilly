@@ -12,15 +12,15 @@
   </head>
   <body style="background-color: #292D50;">
 
-    <!--VR Link-->
+        <!--VR Link-->
                 
-    <div id="result" class="sm:hidden absolute self-center h-screen w-full py-40">
-      <a href="/future.html"><canvas class="w-full"></canvas></a>
-      <h1 class="font-medium text-white text-center text-lg p-2 animate-pulse">enter the portal above</h1>
-    </div>
+          <div id="result" class="sm:hidden absolute self-center h-screen w-full py-40">
+            <a href="/future.html"><canvas class="w-full"></canvas></a>
+            <h1 class="font-medium text-white text-center text-lg p-2 animate-pulse">enter the portal above</h1>
+          </div>
 
-    <!-- NAVIGATION -->
-      <nav id="main nav" style="background-image: url(/bg/1.png);" class="hidden h-10 border-b border-black sticky top-0 sm:flex flex-wrap justify-center">
+        <!-- NAVIGATION -->
+          <nav id="main nav" style="background-image: url(/bg/1.png);" class="hidden h-10 border-b border-black sticky top-0 sm:flex flex-wrap justify-center">
           <div id="Pages" class="h-full w-full flex justify-evenly text-white">
             <button id="VR Experience"> <a href="">VR</a></button>
             <button id="Mural"> <a href="">MURAL</a></button>
@@ -28,7 +28,7 @@
             <button id="VR Experience"> <a href="">CREDITS</a></button>
 
           </div>
-        </nav>
+          </nav>
 
         <!--        LANDING      -->
             <section id="landing" style="background-image: url(/bg/1.png);" class="bg-fill bg-no-repeat h-screen sm:bg-cover bg-center">
@@ -36,14 +36,20 @@
               <div id="landing header" class="h-full flex">
 
                 <!--Text-->
-                <div id="years" class="hidden h-full w-1/2 sm:flex pb-52 pr-12">
-                    <img src="/assets/years.png" class="object-none object-right" alt="the coming years will be hard">
-                </div>
-
-              <!--Text-->
-                  <div id="but" class="hidden h-full w-1/2 sm:flex ">
-                    <img src="/assets/future.png" class="object-none object-left overflow-scroll" alt="">
+                <a href="/future.html" class="w-1/2">
+                  <div id="years" class="hidden h-full sm:flex pb-52 pr-12">
+                    <img src="/assets/years.png" class="object-none object-right animate-pulse" alt="the coming years will be hard">
                   </div>
+
+            
+                </a>
+
+                <!--Text-->
+                  <a href="/future.html" class="w-1/2">
+                    <div id="but" class="hidden h-full sm:flex ">
+                    <img src="/assets/future.png" class="object-none object-left overflow-scroll animate-pulse" alt="">
+                    </div>
+                  </a>
               </div>
               
 
@@ -51,47 +57,38 @@
 
 
         <!-- MURAL -->
-            <section id="credits" style="background-image: url(/bg/5.png);" class="hidden bg-cover bg-center sm:flex">
+            <section style="background-image: url(/bg/5.png);" class="hidden bg-cover bg-center sm:flex">
+
 
               <img src="/assets/mural.jpg" class="w-full object-contain p-10 lg:p-24" alt="">
 
             </section>
 
         <!-- STUDENT SECTION --> 
-            <section id="students" class="hidden h-screen blur-sm bg-yellow-100 sm:flex flex-col flex-nowrap">
-              
-                <nav id="main nav" class="filter h-10 border-b border-black bg-yellow-100 sticky top-0 flex flex-wrap justify-center">
-                <div id="Pages" class="h-full w-full flex justify-evenly text-black">
-                    <button id="VR Experience" class="hover:text-white"> <a href="">VR</a></button>
-                    <button id="Mural" class="hover:text-white"> <a href="">MURAL</a></button>
-                    <button id="STUDENTS" class="hover:text-white"> <a href="">STUDENTS</a></button>
-                    <button id="VR Experience" class="hover:text-white"> <a href="">CREDITS</a></button>
-          
-                </div>
-                </nav>
+            <section id="students" class="hidden h-screen blur-sm bg-yellow-100 sm:flex flex-col flex-nowrap pt-12">
                 
-                <section id="student overview" class="h-5/6 flex flex-row ">
+                <section id="student overview" class="h-full flex flex-row ">
                   <!-- Student Names-->
                   <div id="studentRollcall" class=" pr-4 flex flex-col border-r border-black w-1/4">
-                    <div class="h-auto w-full text-black text-2xl md:text-4xl font-medium flex justify-end"> <h2 class="h-auto place-self-center py-4 pt-6">STUDENTS</h2></div>
-                    <div class="h-auto w-full overflow-scroll">
+                    <div class="h-auto w-full text-black text-2xl font-bold flex justify-end"> <h2 class="h-auto place-self-center py-4 pt-6">Students</h2></div>
+                    <div class="h-auto w-full ">
                       <ul id='studentNames' class="place-items-end h-auto text-black text-sm lg:text-xl flex flex-col flex-nowrap space-y-2">
                         
-                        <li class="hover:text-white"><button id="1a" onclick="Samiaha()" >Samiaha Hadeed</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Jonae()">Jonae Toliver</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Quaron()">Quaron Becoate</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Damien()">Damien Dos Santos</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Ani()">Ani'yah Scott</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Cameron()">Cameron Johnson</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Jahsiah()">Jahsiah Smith</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Amirah()">Amirah Gilmore</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Mya()">Mya Harris</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Oscar()">Oscar Wahl</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Kesiah()">Kesiah Thomas</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Sylvania()">Sylvania Juste</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Adlin()">Adlin Figueroa</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Salai()">Salai Hoyle</button></li>
-                        <li class="hover:text-white"><button id="1a" onclick="Jessie()">Jessie Huang</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Samiaha()" >Samiaha</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Jonae()">Jonae</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Quaron()">Quaron </button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Damien()">Damien</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Ani()">Ani'yah</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Cameron()">Cameron</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Jahsiah()">Jahsiah</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Amirah()">Amirah</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Mya()">Mya</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Oscar()">Oscar</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Kesiah()">Kesiah</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Sylvania()">Sylvania</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Adlin()">Adlin</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Salai()">Salai</button></li>
+                        <li class="hover:text-white"><button id="1a" onclick="Jessie()">Jessie</button></li>
           
                       </ul>
                     
@@ -104,13 +101,130 @@
                     <!--Image-->
                     <div id="studentImage" class="h-4/5 flex justify-center">
                       
-                      <img id="image" class="" src="/assets/mural.jpg" alt="Studentimage">
+                      <img id="image" class="" src="/assets/mural.jpg" alt="">
                     
                     </div>
 
                     <!--Student Copy-->
                     <div id="studentCopy" class="h-auto mt-12 text-center font-mono leading-relaxed">
-                      <p id="studentText"></p>
+                      <p id="studentText">
+
+
+
+                      Letter from the Future, Where We All Are Safe<br>
+
+
+                      Mural Arts Class Collective Poem<br><br>
+
+
+
+
+                      I wish you could see this. I’m writing to you from the future. <br>
+
+
+                      I know life isn’t all sunshine but if you pull through you will be amazing. 
+
+
+                      We survived.
+
+
+                      I thought about how my parents taught me how to stay safe. 
+
+
+                      My mom and dad are older now, it was now my responsibility to keep them safe. 
+
+
+                      We learned to find safety in our own body when nothing else will protect us.
+
+
+                      There was permission to be vulnerable with your darkest truths
+
+
+                      They stopped putting minorities under scrutiny.
+
+
+                      There was a cure to all diseases 
+
+
+                      There was mutual care for eachothers wellbeing 
+
+
+                      There was ’The Ramen Gang’’ : a group of people who understand the look of pain in someone's eyes. 
+
+
+                      People shutdown the government. And made their own
+
+
+                      No countries 
+
+
+                      No Gender Binaries
+
+
+                      No Borders 
+
+
+                      Here, The Unfamiliar is not seen as dangerous
+
+
+                      A digital library 
+
+
+                      All known as Earth 
+
+
+                      No one is afraid to express 
+
+
+                      People relaxing on their open balconies 
+
+
+                      We celebrated the melanin we were blessed with
+
+
+                      We stopped hiding behind the mask and start showing our true selves
+
+
+                      There is no longer one president but a group of 6 leaders 
+
+
+
+                      The police as you know it is a thing of the past
+
+
+                      People in power are diverse in gender identity, age, race, ability and age. 
+
+
+                      They work to reform our communities not rip them apart
+
+
+                      and solved problems at the root of the source 
+
+
+                      Black Girls stitched up a loose thread of the fabric that is life
+
+
+                      nana’s and momma’s boisterous laughs fill my craving ears 
+
+
+                      Those I hold most dear are right by my side 
+
+
+                      The smell of salt in the ocean air 
+
+
+                      Self love is at an all time high
+
+
+                      The coming years for you will be hard
+
+
+                      But the future is worth the fight. 
+
+
+                      Just hold on and you will see. 
+
+                      </p>
                     </div>
                   
                   </div>
@@ -120,7 +234,70 @@
             </section>
 
         <!-- CREDITS -->
-            <section id="credits" style="background-image: url(/bg/4.png);" class="hidden sm:block h-screen bg-cover">
+            <section id="credits" style="background-image: url(/bg/4.png);" class="hidden sm:flex flex-col font-mono h-screen bg-cover text-white gap-y-12 pt-24">
+              
+                <div id="Land" class="px-12 w-3/4 self-center">
+                  <h2 class="text-xl font-bold text-center" >Land Acknowledgement</h2>
+                  <p>Our mural is located on the unceded territories of the Lenni Lenape people. 
+                    The sacred plants depicted in this mural; tobacco and sweetgrass are native to these lands. 
+                    We acknowledge with respect the Lenape peoples' historic and enduring relationship with Lenapehoking, where Philadelphia sits. 
+                    Our vision of safety for Black, Indigenous, Latinx, Asian and POC communities is interconnected with Indigenous flourishing and self-determination. 
+                    We stand with Indigenous peoples all over Turtle Island and the islands of the Pacific who are exercising their sovereignty and working toward justice and freedom. </p>
+                </div>
+
+                <div class="px-12 w-3/4 self-center">
+                  <h2 class="text-xl text-center font-bold">Class Description</h2>
+                  <p>
+                    Through examining art, meditation, songs and writings from Black, Indigenous, Latinx and Asian American artists, cultural workers and storytellers, this introductory course works with highschool-aged youth to contextualize and critically think about the issues of our present day, and use art to open a portal into the future we dream. 
+                    By bringing in visiting artists and leading discussions and art and writing workshops we create a space for local youth to write, make art, and dream. 
+                    Together we will create the foundations of a permanent mural in Philadelphia that shows a collective future where we keep each other safe. 
+                    </p>
+                </div>
+
+                <p class="px-12 w-3/4 self-center text-center">
+                      <span class="text-xl pb-4 font-bold">Teaching Artists</span>
+                      <br>Jess X. Snow, Lead Muralist
+                      <br>Frisly Soberanis, AR/VR Artist
+                      <br><br>
+                </p>
+
+                <p class="px-12 w-3/4 self-center text-center">
+                      <span class="text-xl pb-4 font-bold">Mural Assisted by</span>
+                      <br>Sonja John, Michael Konrad, Malachi Floyd, Molly Floyd, Kah Yangni, and Kenia Guillen, and the Women’s Reentry Guild.
+                      <br><br>
+                </p>
+
+
+
+                <p class="px-12 w-3/4 self-center text-center">
+                      <span class="text-xl text-center pb-4 font-bold">Visiting Guest Artists</span>
+                      <br>Mahogany L. Browne
+                      Kyoko Takenaka
+                      Ishkwaazhe Shane McSauby
+                      Derrick Woodyard 
+                </p>
+                
+                
+                <div  class="text-center px-12 w-3/4 self-center">
+                  <h2 class="text-xl font-bold">Reading List & Resources</h2>
+                  <p>We Do This 'Til We Free Us: Abolitionist Organizing and Transforming Justice <br>- Mariame Kaba
+                    <br>Sister Outsider- Audre Lorde 
+                    <br>How To Sit - Thich Nhat Hanh 
+                    <br>An Indigenous People's History of the United States <br>- Roxanne Dunbar-Ortiz -
+                    <br>Beyond Survival: Stories and Strategies From the Transformative Justice Movement -   Ejeris Dixon, Leah Lakshmi Piepzna-Samarasinha
+                    <br>
+                    <br><a href="http://www.transformharm.org/" target="_BLANK">http://www.transformharm.org/</a>
+                    <br><a href="http://www.native-land.ca/" target="_BLANK">http://www.native-land.ca/</a>
+                    <br><a href="https://leavingevidence.wordpress.com/2019/12/18/how-to-give-a-good-apology-part-1-the-four-parts-of-accountability/" target="_BLANK">how-to-give-a-good-apology-part-1-the-four-parts-of-accountability/</a>
+                    <br><a href="https://leavingevidence.wordpress.com/2019/12/18/how-to-give-a-good-apology-part-2-the-apology-the-what-and-the-how/" target="_BLANK">how-to-give-a-good-apology-part-2-the-apology-the-what-and-the-how/</a>
+
+                    <br><br>
+                    
+                  </p>
+                </div>
+              
+             
+
 
             </section>
 
