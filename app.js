@@ -158,6 +158,13 @@ function Jessie(){
 
 }
 
+function Paige(){
+
+  document.getElementById("image").src="/assets/Paige.jpg";
+  document.getElementById("studentText").innerHTML = PaigeCopy;
+
+}
+
 
 
 let SamiahaCopy = ''
@@ -175,3 +182,4 @@ let SylvaniaCopy = "To Grandma <br><br>Dear Grandma i  write this letter to tell
 let KiarraCopy = ''
 let SalaiCopy = "Dear younger self, <br>The world we live in is only safe as what you and your community make it. As long as you keep a positive mindset and stay focused on what you believe that your community should be to keep you safe and at peace.<br> Move a certain way everyone should not know what you have or what you doing because you're becoming a target once people see you doing good and that takes a big part on why my community isn’t really safe as it should be and continue to be. You don’t let anyone change that."
 let JessieCopy = "Safety smell like tea make me relax.<br>I am safe when i have something to eat.<br>I am safe when my mom holding my hand.<br>When my family Support me all the time I feel safety.<br>My family is safe when we have a place to live.<br>My community is safe when at the sleepy night."
+let PaigeCopy = ""
